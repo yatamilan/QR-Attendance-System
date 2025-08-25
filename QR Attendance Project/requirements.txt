@@ -1,0 +1,15 @@
+opencv-python
+pandas
+qrcode
+openpyxl
+# install this python libary before running the code
+# 1.First add the students name in the students.csv file
+# 2.Run the qr_generator.py file to generate the QR codes
+# 3.Then run the qr_scanner.py file to scan the QR codes
+# 4.Show the Generated QR codes to the camera to mark attendance
+# 5.The attendance will be marked in the attendance.xlsx file
+# 6.Make sure to install all the required libraries mentioned in the requirements.txt file
+# 7.That's it you are done
+# 8.Enjoy :) Tag me in your projects if you use this code
+# 9.Thanks for seeing my project
+# 10.Happy Coding :)
