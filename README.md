@@ -12,7 +12,6 @@ It uses **OpenCV** to scan QR codes via webcam and automatically logs attendance
 * ✅ Avoids duplicate entries for the same student on the same day
 * ✅ Highlights already marked students in a different color
 * ✅ Plays a beep sound on successful scan (Windows only)
-* ✅ GUI with Start/Stop buttons (Tkinter)
 
 ---
 
@@ -20,7 +19,7 @@ It uses **OpenCV** to scan QR codes via webcam and automatically logs attendance
 
 ```
 📁 QR-Attendance-System
- ┣ 📄 qr_gui.py          # Main GUI scanner
+ ┣ 📄 qr_scanner.py          # main scanner
  ┣ 📄 qr_generator.py    # Script to generate QR codes for students
  ┣ 📄 attendance_qr.xlsx # Auto-created attendance file
  ┣ 📄 README.md          # Project documentation
@@ -65,18 +64,18 @@ This creates a `qrcodes/` folder with individual student QR images.
 QR payload format:
 
 ```
-ID=101|NAME=Arun Kumar
+ID=101|NAME=YA
 ```
 
-### 2. Start the Scanner (GUI Mode)
+### 2. Start the Scanner
 
 ```bash
-python qr_gui.py
+python qr_scanner.py
 ```
 
-* Click **Start Scanner** → Opens webcam.
+* Click **Run the code** → Opens webcam.
 * Show a QR code → Attendance is logged into `attendance_qr.xlsx`.
-* Click **Stop Scanner** or press **Q** → Stops the scanner.
+* Click **q or Ctrl +C** or press **Q** → Stops the scanner.
 
 ---
 
@@ -86,7 +85,7 @@ Attendance is saved in **Excel** (`attendance_qr.xlsx`) with columns:
 
 | timestamp           | date       | time     | student\_id | name       | source    |
 | ------------------- | ---------- | -------- | ----------- | ---------- | --------- |
-| 2025-08-25 10:15:20 | 2025-08-25 | 10:15:20 | 101         | Arun Kumar | QR Webcam |
+| YYYY-MM-DD 10:15:20 | YYYY-MM-DD | 10:15:20 | 101         | YA         | QR Webcam |
 
 ---
 
@@ -94,7 +93,6 @@ Attendance is saved in **Excel** (`attendance_qr.xlsx`) with columns:
 
 * **Python 3.8+**
 * **OpenCV** (QR code detection)
-* **Tkinter** (GUI)
 * **Pandas + OpenPyXL** (Excel storage)
 * **Pillow** (QR image handling)
 
