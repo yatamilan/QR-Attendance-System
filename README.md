@@ -1,6 +1,6 @@
 # 📸 QR Attendance System
 
-A simple Python-based **QR Code Attendance System** with a **Graphical User Interface (GUI)**.
+A simple Python-based **QR Code Attendance System**.
 It uses **OpenCV** to scan QR codes via webcam and automatically logs attendance into an Excel file.
 
 ---
